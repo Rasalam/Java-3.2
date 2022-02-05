@@ -1,6 +1,6 @@
 public class IMTService {
     public float calculate(float weight, float growth) {
-        float imt = (float) (weight / Math.pow(growth, 2));
+        float imt = weight / (growth * growth);
         return imt;
     }
 }
